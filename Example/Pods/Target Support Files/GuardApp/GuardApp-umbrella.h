@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "AntiDebug.h"
+#import "GuardApp.h"
 
 FOUNDATION_EXPORT double GuardAppVersionNumber;
 FOUNDATION_EXPORT const unsigned char GuardAppVersionString[];

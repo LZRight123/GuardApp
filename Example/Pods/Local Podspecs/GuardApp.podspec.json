@@ -1,9 +1,9 @@
 {
   "name": "GuardApp",
   "version": "0.1.0",
-  "summary": "A short description of GuardApp.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/350442340@qq.com/GuardApp",
+  "summary": "安全防护.",
+  "description": "反调试，反网络中间人攻击，反注入等...",
+  "homepage": "https://github.com/LZRight123/GuardApp",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,11 @@
     "350442340@qq.com": "350442340@qq.com"
   },
   "source": {
-    "git": "https://github.com/350442340@qq.com/GuardApp.git",
+    "git": "https://github.com/LZRight123/GuardApp.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "GuardApp/Classes/**/*"
+  "source_files": "GuardApp/Classes/**/*.{h,m}"
 }

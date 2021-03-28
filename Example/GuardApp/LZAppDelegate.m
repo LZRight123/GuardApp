@@ -7,11 +7,14 @@
 //
 
 #import "LZAppDelegate.h"
-
+#import <GuardApp/GuardApp.h>
+//#import <GuardApp/AntiDebug.h>
 @implementation LZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//    lz_ptrace();
+    lz_anti_start();
     // Override point for customization after application launch.
     return YES;
 }

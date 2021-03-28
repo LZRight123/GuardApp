@@ -1,23 +1,27 @@
 # GuardApp
 
-[![CI Status](https://img.shields.io/travis/350442340@qq.com/GuardApp.svg?style=flat)](https://travis-ci.org/350442340@qq.com/GuardApp)
-[![Version](https://img.shields.io/cocoapods/v/GuardApp.svg?style=flat)](https://cocoapods.org/pods/GuardApp)
-[![License](https://img.shields.io/cocoapods/l/GuardApp.svg?style=flat)](https://cocoapods.org/pods/GuardApp)
-[![Platform](https://img.shields.io/cocoapods/p/GuardApp.svg?style=flat)](https://cocoapods.org/pods/GuardApp)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
 ## Installation
 
-GuardApp is available through [CocoaPods](https://cocoapods.org). To install
+AntiDebug is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'GuardApp'
+pod 'GuardApp', :git => "https://github.com/LZRight123/GuardApp.git"
+```
+
+## AntiDebug
+反调试,退出程序
+
+### Requirements
+###### oc,swift用法：
+```oc
+lz_ptrace()
+lz_dlhandle()
+lz_anti_debug_for_sysctl()
+lz_asm_pt()
+
+let isDebug = lz_isDebuggingWithSysctl()
+lz_asm_exit()
 ```
 
 ## Author
@@ -26,4 +30,4 @@ pod 'GuardApp'
 
 ## License
 
-GuardApp is available under the MIT license. See the LICENSE file for more info.
+AntiDebug is available under the MIT license. See the LICENSE file for more info.

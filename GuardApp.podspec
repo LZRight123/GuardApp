@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
                         反调试，反网络中间人攻击，反注入等...
                        DESC
 
-  s.homepage         = 'https://github.com/350442340@qq.com/GuardApp'
+  s.homepage         = 'https://github.com/LZRight123/GuardApp'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '350442340@qq.com' => '350442340@qq.com' }
-  s.source           = { :git => 'https://github.com/350442340@qq.com/GuardApp.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/LZRight123/GuardApp.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
