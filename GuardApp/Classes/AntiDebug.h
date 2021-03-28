@@ -5,6 +5,7 @@
 //  Created by 梁泽 on 2021/3/28.
 //
 
+#import "LZAntiHelp.h"
 #import <dlfcn.h>
 #import <sys/sysctl.h>
 #import <Foundation/Foundation.h>
@@ -90,34 +91,13 @@ static __attribute__((always_inline)) BOOL lz_isDebuggingWithSysctl() {
     return ((info.kp_proc.p_flag & P_TRACED) != 0);
 }
 
-static __attribute__((always_inline)) void lz_asm_exit() {
-#ifdef __arm64__
-    __asm__("mov X0, #0\n"
-            "mov w16, #1\n"
-            "svc #0x80\n"
-            
-            "mov x1, #0\n"
-            "mov sp, x1\n"
-            "mov x29, x1\n"
-            "mov x30, x1\n"
-            "ret");
-#endif
-    abort();
-    exit(-1);
-}
-
-@interface LZAntiHelp : NSObject
-@property (nonatomic) dispatch_source_t timer;
-+ (instancetype)share;
-@end
-
 
 static __attribute__((always_inline)) void lz_anti_debug_for_sysctl() {
-    if (LZAntiHelp.share.timer == nil) {
-        LZAntiHelp.share.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(0, 0));
+    if (LZAntiHelp.share.antiDebugTimer == nil) {
+        LZAntiHelp.share.antiDebugTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(0, 0));
     }
     
-    dispatch_source_t timer = LZAntiHelp.share.timer;
+    dispatch_source_t timer = LZAntiHelp.share.antiDebugTimer;
         dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC, 0.0 * NSEC_PER_SEC);
         dispatch_source_set_event_handler(timer, ^{
             if (lz_isDebuggingWithSysctl()) {

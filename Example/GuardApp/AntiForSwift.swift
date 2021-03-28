@@ -10,7 +10,9 @@ import Foundation
 
 class SwAnitDebug: NSObject {
     @objc static func start() {
-        lz_syscall();
+//        lz_syscall();
+//        lz_anti_net_start();
+
 //        lz_anti_start()
 //        lz_ptrace()
 //        lz_dlhandle()

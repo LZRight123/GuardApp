@@ -14,6 +14,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//    lz_anti_net_start();
     [SwAnitDebug start];
 //    lz_syscall();
 //    lz_ptrace();

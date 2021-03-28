@@ -1,11 +1,11 @@
 //
-//  AntiDebug.m
-//  AntiDebug
+//  LZAntiHelp.m
+//  GuardApp
 //
 //  Created by 梁泽 on 2021/3/28.
 //
 
-#import "AntiDebug.h"
+#import "LZAntiHelp.h"
 
 @implementation LZAntiHelp
 + (instancetype)share {

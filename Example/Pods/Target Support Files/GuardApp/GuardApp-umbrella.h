@@ -11,7 +11,9 @@
 #endif
 
 #import "AntiDebug.h"
+#import "AntiNetWork.h"
 #import "GuardApp.h"
+#import "LZAntiHelp.h"
 
 FOUNDATION_EXPORT double GuardAppVersionNumber;
 FOUNDATION_EXPORT const unsigned char GuardAppVersionString[];
