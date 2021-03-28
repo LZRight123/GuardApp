@@ -1,0 +1,16 @@
+PODS:
+  - GuardApp (0.1.0)
+
+DEPENDENCIES:
+  - GuardApp (from `../`)
+
+EXTERNAL SOURCES:
+  GuardApp:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GuardApp: b6c2fa6787322c78015e6e2b133c55b2d2d81163
+
+PODFILE CHECKSUM: 18f4d6848b553f358e9f0ef2cc839d1ce2a77a4f
+
+COCOAPODS: 1.10.1

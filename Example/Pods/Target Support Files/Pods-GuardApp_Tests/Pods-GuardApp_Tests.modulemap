@@ -1,0 +1,6 @@
+framework module Pods_GuardApp_Tests {
+  umbrella header "Pods-GuardApp_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

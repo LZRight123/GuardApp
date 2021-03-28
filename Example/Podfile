@@ -5,9 +5,5 @@ platform :ios, '9.0'
 target 'GuardApp_Example' do
   pod 'GuardApp', :path => '../'
 
-  target 'GuardApp_Tests' do
-    inherit! :search_paths
-
-    
-  end
+ 
 end
