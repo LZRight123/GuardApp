@@ -9,9 +9,6 @@ it, simply add the following line to your Podfile:
 pod 'GuardApp', :git => "https://github.com/LZRight123/GuardApp.git"
 ```
 
-## Requirements
-无
-
 ## 反调试
 
 ```oc
