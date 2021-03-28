@@ -7,14 +7,17 @@
 //
 
 #import "LZAppDelegate.h"
+#import "GuardApp_Example-Swift.h"
 #import <GuardApp/GuardApp.h>
 //#import <GuardApp/AntiDebug.h>
 @implementation LZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [SwAnitDebug start];
+//    lz_syscall();
 //    lz_ptrace();
-    lz_anti_start();
+//    lz_anti_start();
     // Override point for customization after application launch.
     return YES;
 }

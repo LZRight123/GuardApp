@@ -15,6 +15,8 @@
 		AA67869D9C7A6046A0A8F90734CEBD52 /* Pods-GuardApp_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77914FE41F723F42CE3123D20ECAE8FF /* Pods-GuardApp_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B656EDF5E08E23C1FE492F3D4D151BEF /* AntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = C48AF529D199288B8BA74C02961BF88E /* AntiDebug.m */; };
 		CCBA7886F375A1EB3E7C6DE3B23AA5B1 /* AntiDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FFC05191C1D05FC31E5E4152EC61F40 /* AntiDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFCEA4342610A79100557ED3 /* AntiNetWork.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCEA4322610A79100557ED3 /* AntiNetWork.h */; };
+		DFCEA4352610A79100557ED3 /* AntiNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCEA4332610A79100557ED3 /* AntiNetWork.m */; };
 		F181486440B152C7375D4F642CC8B61D /* GuardApp.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1461E4968DD97BDFBFD20B162F4E71 /* GuardApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -31,29 +33,31 @@
 /* Begin PBXFileReference section */
 		0FFC05191C1D05FC31E5E4152EC61F40 /* AntiDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AntiDebug.h; path = GuardApp/Classes/AntiDebug.h; sourceTree = "<group>"; };
 		148BAFDD0279D5667A542C6F9410D2F6 /* Pods-GuardApp_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GuardApp_Example.modulemap"; sourceTree = "<group>"; };
-		185AA6574896440880BE0655C3F72A05 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		185AA6574896440880BE0655C3F72A05 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		189F2747CB03737617FD6207719808DB /* Pods-GuardApp_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuardApp_Example-Info.plist"; sourceTree = "<group>"; };
 		18C51B061216EEF89EDD6ED7FA5ED146 /* GuardApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GuardApp-umbrella.h"; sourceTree = "<group>"; };
 		1C4BB9EF4D8759EA6B7BC5228E989FC2 /* Pods-GuardApp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuardApp_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1CE557D681E85D040BF3DB671E13D0A5 /* Pods-GuardApp_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuardApp_Example-frameworks.sh"; sourceTree = "<group>"; };
-		23BF013F9B7D33692DC66619E8E875FC /* GuardApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GuardApp.framework; path = GuardApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23BF013F9B7D33692DC66619E8E875FC /* GuardApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GuardApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26084D5B27B6233F11788AC4D05A3574 /* GuardApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GuardApp-Info.plist"; sourceTree = "<group>"; };
-		480DD8C76EFFC0345A47B27D590C7560 /* Pods_GuardApp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GuardApp_Example.framework; path = "Pods-GuardApp_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		480DD8C76EFFC0345A47B27D590C7560 /* Pods_GuardApp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuardApp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		74F1B6CFD7C66E9357E4CB6CBE1BB12F /* GuardApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GuardApp.debug.xcconfig; sourceTree = "<group>"; };
 		77914FE41F723F42CE3123D20ECAE8FF /* Pods-GuardApp_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuardApp_Example-umbrella.h"; sourceTree = "<group>"; };
 		86E3D400A3243A515485383F83B0DE22 /* GuardApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GuardApp.release.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A9D066EA2B4EA614A50E10C092C70B4D /* GuardApp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GuardApp-prefix.pch"; sourceTree = "<group>"; };
 		AB2E82B204798159A19D287A4CC270B7 /* GuardApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GuardApp-dummy.m"; sourceTree = "<group>"; };
-		AB508982FA969696AB87042F792B17CB /* GuardApp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GuardApp.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AB508982FA969696AB87042F792B17CB /* GuardApp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GuardApp.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B6A1338FF206CBE797820A8F6E29752D /* Pods-GuardApp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuardApp_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C48AF529D199288B8BA74C02961BF88E /* AntiDebug.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AntiDebug.m; path = GuardApp/Classes/AntiDebug.m; sourceTree = "<group>"; };
 		CB3135C0E92EA3A6DD9EFE366BE21FD7 /* GuardApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GuardApp.modulemap; sourceTree = "<group>"; };
 		DDAA0D415C6E544A87A41EE36FA16862 /* Pods-GuardApp_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuardApp_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		DFCEA4322610A79100557ED3 /* AntiNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AntiNetWork.h; path = GuardApp/Classes/AntiNetWork.h; sourceTree = "<group>"; };
+		DFCEA4332610A79100557ED3 /* AntiNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiNetWork.m; path = GuardApp/Classes/AntiNetWork.m; sourceTree = "<group>"; };
 		E5B26F5BE770079AC57AF67DE4C70AF3 /* Pods-GuardApp_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuardApp_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EF0AEA98A418434CB8841F2F6E446095 /* Pods-GuardApp_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuardApp_Example-dummy.m"; sourceTree = "<group>"; };
-		F911BE227E163F58F0730DA679A7F31A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F911BE227E163F58F0730DA679A7F31A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		FA1461E4968DD97BDFBFD20B162F4E71 /* GuardApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GuardApp.h; path = GuardApp/Classes/GuardApp.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +86,8 @@
 			children = (
 				0FFC05191C1D05FC31E5E4152EC61F40 /* AntiDebug.h */,
 				C48AF529D199288B8BA74C02961BF88E /* AntiDebug.m */,
+				DFCEA4322610A79100557ED3 /* AntiNetWork.h */,
+				DFCEA4332610A79100557ED3 /* AntiNetWork.m */,
 				FA1461E4968DD97BDFBFD20B162F4E71 /* GuardApp.h */,
 				DA02012AF1C466F6FFF3EDFFB7A14A7C /* Pod */,
 				B50C8F9B2642C13432A7C7B21FE7C968 /* Support Files */,
@@ -192,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCBA7886F375A1EB3E7C6DE3B23AA5B1 /* AntiDebug.h in Headers */,
+				DFCEA4342610A79100557ED3 /* AntiNetWork.h in Headers */,
 				01B64289E349F92DE30D813533401692 /* GuardApp-umbrella.h in Headers */,
 				F181486440B152C7375D4F642CC8B61D /* GuardApp.h in Headers */,
 			);
@@ -304,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B656EDF5E08E23C1FE492F3D4D151BEF /* AntiDebug.m in Sources */,
+				DFCEA4352610A79100557ED3 /* AntiNetWork.m in Sources */,
 				323E63A1AB8F91AF466A3FBFB2C714A5 /* GuardApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,8 +542,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

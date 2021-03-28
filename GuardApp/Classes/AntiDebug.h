@@ -26,8 +26,7 @@ static __attribute__((always_inline)) void lz_dlhandle() {
 /// syscall掉pt
 static __attribute__((always_inline)) void lz_syscall() {
     // https://www.theiphonewiki.com/wiki/Kernel_Syscalls
-    //    syscall(26, 31, 0, 0, 0);
-    NSLog(@"在你的代码里掉syscall");
+    syscall(26, 31, 0, 0, 0);
 }
 
 /// 汇编掉pt
@@ -134,9 +133,10 @@ static __attribute__((always_inline)) void lz_anti_debug_for_sysctl() {
 
 
 /// 开启
-static __attribute__((always_inline)) void lz_anti_start() {
+static __attribute__((always_inline)) void lz_anti_debug_start() {
     lz_ptrace();
     lz_dlhandle();
+    lz_syscall();
     lz_anti_debug_for_sysctl();
     lz_asm_pt();
 }
