@@ -9,10 +9,12 @@ it, simply add the following line to your Podfile:
 pod 'GuardApp', :git => "https://github.com/LZRight123/GuardApp.git"
 ```
 
+## Requirements
+无
+
 ## AntiDebug
 反调试,退出程序
 
-### Requirements
 ###### oc,swift用法：
 ```oc
 lz_ptrace()
