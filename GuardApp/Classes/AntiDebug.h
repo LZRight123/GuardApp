@@ -142,5 +142,5 @@ static __attribute__((always_inline)) void lz_anti_debug_start() {
 
 
 static __attribute__((constructor)) void lz_anti_debug_entry() {
-//    NSLog(@"lz_anti_debug_entry");
+//    NSLog(@"lz_anti_debug_entry"); _dyld_debugger_notification
 }
