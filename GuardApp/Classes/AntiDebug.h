@@ -9,6 +9,8 @@
 #import <dlfcn.h>
 #import <sys/sysctl.h>
 #import <Foundation/Foundation.h>
+#import <mach/task.h>
+#import <mach/mach_init.h>
 /// 直接pt
 static __attribute__((always_inline)) void lz_ptrace() {
     int ptrace(int _request, int _pid, char *  _addr, int _data);
@@ -108,6 +110,37 @@ static __attribute__((always_inline)) void lz_anti_debug_isatty() {
     }
 }
 
+/// 获取异常端口
+static __attribute__((always_inline)) void lz_anti_debug_get_prots() {
+    struct ios_exception_info{
+        exception_mask_t masks[EXC_TYPES_COUNT];
+        mach_port_t ports[EXC_TYPES_COUNT];
+        exception_behavior_t behaviors[EXC_TYPES_COUNT];
+        thread_state_flavor_t flavors[EXC_TYPES_COUNT];
+        mach_msg_type_number_t cout;
+    };
+
+  
+    struct ios_exception_info *info = malloc(sizeof(struct ios_exception_info));
+    task_get_exception_ports(mach_task_self(),
+                                                EXC_MASK_ALL,
+                                                info->masks,
+                                                &info->cout,
+                                                info->ports,
+                                                info->behaviors,
+                                                info->flavors);
+
+    for(uint32_t i = 0; i < info->cout; i ++){
+        if(info->ports[i] != 0 || info->flavors[i] == THREAD_STATE_NONE){
+            lz_asm_exit();
+        } else {
+            
+        }
+    }
+}
+
+
+
 
 /// 开启
 static __attribute__((always_inline)) void lz_anti_debug_start() {
@@ -120,12 +153,13 @@ static __attribute__((always_inline)) void lz_anti_debug_start() {
         dispatch_source_t timer = LZAntiHelp.share.antiDebugTimer;
         dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC, 0.0 * NSEC_PER_SEC);
         dispatch_source_set_event_handler(timer, ^{
-            lz_ptrace();
-            lz_dlhandle();
-            lz_syscall();
-            lz_anti_debug_for_sysctl();
-            lz_anti_debug_isatty();
-            lz_asm_pt();
+//            lz_ptrace();
+//            lz_dlhandle();
+//            lz_syscall();
+//            lz_anti_debug_for_sysctl();
+//            lz_anti_debug_isatty();
+//            lz_asm_pt();
+//            lz_anti_debug_get_prots();
         });
         
         dispatch_resume(timer);

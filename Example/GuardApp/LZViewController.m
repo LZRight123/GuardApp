@@ -28,7 +28,6 @@
 //         NSLog(@"ioctl bypassed");
 //     }
     
-    lz_anti_debug_start();
 
 
 }

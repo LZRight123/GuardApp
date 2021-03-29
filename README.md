@@ -15,7 +15,7 @@ pod 'GuardApp', :git => "https://github.com/LZRight123/GuardApp.git"
 ```oc
 lz_anti_debug_start()
 ```
-内部调用了`lz_ptrace`，`lz_dlhandle`，`lz_anti_debug_for_sysctl`，`lz_asm_pt`，`lz_anti_debug_isatty`，`lz_asm_exit`
+内部调用了`lz_ptrace`，`lz_dlhandle`，`lz_anti_debug_for_sysctl`，`lz_asm_pt`，`lz_anti_debug_isatty`，`lz_anti_debug_get_prots`
 
 ## 反代理，反网络抓包
 
