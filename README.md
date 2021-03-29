@@ -24,6 +24,7 @@ lz_anti_net_start();
 ```
 
 ## 反注入
+- 调试阶段
 ```oc
 lz_anti_injected_start();
 ```
