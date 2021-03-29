@@ -9,11 +9,17 @@
 #import "LZAppDelegate.h"
 #import "GuardApp_Example-Swift.h"
 #import <GuardApp/GuardApp.h>
+#include <termios.h>
+
 //#import <GuardApp/AntiDebug.h>
 @implementation LZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  
+    
+    
+    lz_anti_injected_start();
 //    lz_anti_net_start();
     [SwAnitDebug start];
 //    lz_syscall();

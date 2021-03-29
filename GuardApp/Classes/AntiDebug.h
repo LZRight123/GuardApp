@@ -93,32 +93,51 @@ static __attribute__((always_inline)) BOOL lz_isDebuggingWithSysctl() {
 
 
 static __attribute__((always_inline)) void lz_anti_debug_for_sysctl() {
-    if (LZAntiHelp.share.antiDebugTimer == nil) {
-        LZAntiHelp.share.antiDebugTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(0, 0));
+    if (lz_isDebuggingWithSysctl()) {
+        //                abort();
+        lz_asm_exit();
+    }else {
+        //                NSLog(@"正常");
     }
-    
-    dispatch_source_t timer = LZAntiHelp.share.antiDebugTimer;
-        dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC, 0.0 * NSEC_PER_SEC);
-        dispatch_source_set_event_handler(timer, ^{
-            if (lz_isDebuggingWithSysctl()) {
-//                abort();
-                lz_asm_exit();
-            }else {
-//                NSLog(@"正常");
-            }
-        });
-        dispatch_resume(timer);
+
 }
 
+static __attribute__((always_inline)) void lz_anti_debug_isatty() {
+    if (isatty(1)) {
+        lz_asm_exit();
+    }
+}
 
 
 /// 开启
 static __attribute__((always_inline)) void lz_anti_debug_start() {
-    lz_ptrace();
-    lz_dlhandle();
-    lz_syscall();
-    lz_anti_debug_for_sysctl();
-    lz_asm_pt();
+    
+    @try {
+        if (LZAntiHelp.share.antiDebugTimer == nil) {
+            LZAntiHelp.share.antiDebugTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(0, 0));
+        }
+        
+        dispatch_source_t timer = LZAntiHelp.share.antiDebugTimer;
+        dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC, 0.0 * NSEC_PER_SEC);
+        dispatch_source_set_event_handler(timer, ^{
+            lz_ptrace();
+            lz_dlhandle();
+            lz_syscall();
+            lz_anti_debug_for_sysctl();
+            lz_anti_debug_isatty();
+            lz_asm_pt();
+        });
+        
+        dispatch_resume(timer);
+        
+    } @catch (NSException *exception) {
+        
+    } @finally {
+        
+    }
+    
+    
+    
 }
 
 

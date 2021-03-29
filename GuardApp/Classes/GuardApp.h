@@ -10,7 +10,7 @@
 
 #import "AntiDebug.h"
 #import "AntiNetWork.h"
-
+#import "AntiInjection.h"
 
 
 #endif /* GuardApp_h */

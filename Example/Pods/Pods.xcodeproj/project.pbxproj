@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		013A960AA7A3D9D19882E329CC8007F7 /* GuardApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4DFDA8EE76E54660251ED6F5D14F3C /* GuardApp-dummy.m */; };
+		0208E153C78CC70E18F90A69AFCA1993 /* AntiDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = FB0B40DAF43A4CE5A8A0F33CB6BEC007 /* AntiDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D085E615076A603F10EBB17FF63A319 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2A554BB85345C99F950BB4FD1E62A0C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2BDDA16D168715245CD64A237FC35BB2 /* GuardApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F61118F698844C305F7915644059376 /* GuardApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D6751E64DD2954B3DF3A6EC2200232F /* Pods-GuardApp_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0AEA98A418434CB8841F2F6E446095 /* Pods-GuardApp_Example-dummy.m */; };
-		5DF3C2A2C4984050536244C83FB2B136 /* GuardApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C803A74536A53D96F43D238F772AD19 /* GuardApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		936139CA6E487C72C010F97E1D7DF2C2 /* AntiDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F02C7E4362FB3BB4DF7CC1F7866872 /* AntiDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42CD231B346189F75FCC1E3504C86686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		60C4CB253BEFA0329DCBE5C0882879C9 /* GuardApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 121A72E6000A7DE12C73C0A5775E7B06 /* GuardApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		636931A2BCA4228810786C85E740D184 /* GuardApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3B47269D2764490D366BC1E575122B3 /* GuardApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6685A7C4E3FF4F1D7634F04F14591AE5 /* LZAntiHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = D35AB7EE2CEE3A14B6DB9E319F8C2C19 /* LZAntiHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7980AC3CF0D0DDA4D7F3D39580D32EDC /* LZAntiHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E67BFA1DE4C831967ECAF723ED45EEF /* LZAntiHelp.m */; };
+		A77D8CBBA7808E37BFB31D561F82504F /* GuardApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 747B7753A5BBFA20132FF09E18DCA250 /* GuardApp-dummy.m */; };
 		AA67869D9C7A6046A0A8F90734CEBD52 /* Pods-GuardApp_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77914FE41F723F42CE3123D20ECAE8FF /* Pods-GuardApp_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B045AA8F824C675056A31D73A00548CA /* AntiNetWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 90ACF696E92D95F5D5FFB423DF96E786 /* AntiNetWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B38C121360DDD7EF74124599C0D59107 /* AntiNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C9C611284AF16CAA1013883E8FA994 /* AntiNetWork.m */; };
-		E981023DA4CA2053BBD2813DCAA279E8 /* LZAntiHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9D1EC11DFE4570862CC6366712D68 /* LZAntiHelp.m */; };
-		EF1BD9EF3D406F6177D9130F1ED649EB /* LZAntiHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E9245E85DF318BEFFFDC9779F001241 /* LZAntiHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF6FFFFABCB639F8025828F283B4A635 /* AntiInjection.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F11BFB48DD6656D9680E4E935EB7617 /* AntiInjection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B68DF31377779FB25E777EEBC48CCD9D /* AntiNetWork.h in Headers */ = {isa = PBXBuildFile; fileRef = FBF37B0FFC50C9A6A8506D2B2041F514 /* AntiNetWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,43 +32,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0270185B5A343B658083E8E0791FEA97 /* GuardApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GuardApp.debug.xcconfig; sourceTree = "<group>"; };
-		0E4DFDA8EE76E54660251ED6F5D14F3C /* GuardApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GuardApp-dummy.m"; sourceTree = "<group>"; };
-		12C9C611284AF16CAA1013883E8FA994 /* AntiNetWork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AntiNetWork.m; path = GuardApp/Classes/AntiNetWork.m; sourceTree = "<group>"; };
+		121A72E6000A7DE12C73C0A5775E7B06 /* GuardApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GuardApp.h; path = GuardApp/Classes/GuardApp.h; sourceTree = "<group>"; };
 		148BAFDD0279D5667A542C6F9410D2F6 /* Pods-GuardApp_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GuardApp_Example.modulemap"; sourceTree = "<group>"; };
 		189F2747CB03737617FD6207719808DB /* Pods-GuardApp_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuardApp_Example-Info.plist"; sourceTree = "<group>"; };
 		1C4BB9EF4D8759EA6B7BC5228E989FC2 /* Pods-GuardApp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuardApp_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1CE557D681E85D040BF3DB671E13D0A5 /* Pods-GuardApp_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuardApp_Example-frameworks.sh"; sourceTree = "<group>"; };
-		1F61118F698844C305F7915644059376 /* GuardApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GuardApp-umbrella.h"; sourceTree = "<group>"; };
 		23BF013F9B7D33692DC66619E8E875FC /* GuardApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GuardApp.framework; path = GuardApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		273BB02B5232A1CA9FC7194EAA05C292 /* GuardApp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GuardApp-prefix.pch"; sourceTree = "<group>"; };
-		4680E7B5A069C50156A45F68BF6ED9B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		2EC66F3A536D18879261DE6B95D0E68B /* GuardApp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GuardApp.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3E67BFA1DE4C831967ECAF723ED45EEF /* LZAntiHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LZAntiHelp.m; path = GuardApp/Classes/LZAntiHelp.m; sourceTree = "<group>"; };
 		480DD8C76EFFC0345A47B27D590C7560 /* Pods_GuardApp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GuardApp_Example.framework; path = "Pods-GuardApp_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB13430BD8ADB462349064F5191EFC8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		72C650AEEC5223AEF1DEAA46FE35F1EB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		747B7753A5BBFA20132FF09E18DCA250 /* GuardApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GuardApp-dummy.m"; sourceTree = "<group>"; };
 		77914FE41F723F42CE3123D20ECAE8FF /* Pods-GuardApp_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuardApp_Example-umbrella.h"; sourceTree = "<group>"; };
-		7C803A74536A53D96F43D238F772AD19 /* GuardApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GuardApp.h; path = GuardApp/Classes/GuardApp.h; sourceTree = "<group>"; };
-		8410B89070D67709C61A61F7DAA8F996 /* GuardApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GuardApp.release.xcconfig; sourceTree = "<group>"; };
-		841DC11DDC8BDEA2B59F1748CC5A5B38 /* GuardApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GuardApp.modulemap; sourceTree = "<group>"; };
-		8E9245E85DF318BEFFFDC9779F001241 /* LZAntiHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LZAntiHelp.h; path = GuardApp/Classes/LZAntiHelp.h; sourceTree = "<group>"; };
-		90ACF696E92D95F5D5FFB423DF96E786 /* AntiNetWork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AntiNetWork.h; path = GuardApp/Classes/AntiNetWork.h; sourceTree = "<group>"; };
+		957AC0AA1B794B93E762538D62ED2532 /* GuardApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GuardApp-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A7B8AD8E71A52229ECA3C091DB45D24D /* GuardApp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GuardApp.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F11BFB48DD6656D9680E4E935EB7617 /* AntiInjection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AntiInjection.h; path = GuardApp/Classes/AntiInjection.h; sourceTree = "<group>"; };
+		B692535418C8A941897279E75634D750 /* GuardApp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GuardApp-prefix.pch"; sourceTree = "<group>"; };
 		B6A1338FF206CBE797820A8F6E29752D /* Pods-GuardApp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuardApp_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BCC9D1EC11DFE4570862CC6366712D68 /* LZAntiHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LZAntiHelp.m; path = GuardApp/Classes/LZAntiHelp.m; sourceTree = "<group>"; };
-		BDC533F1687429FACB0DDB8B308B7619 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		D9F02C7E4362FB3BB4DF7CC1F7866872 /* AntiDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AntiDebug.h; path = GuardApp/Classes/AntiDebug.h; sourceTree = "<group>"; };
+		C59C4A1217FCC4499BB8125E7DBB1034 /* GuardApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GuardApp.modulemap; sourceTree = "<group>"; };
+		C6101EA98001F105EEDC4F7C4E8D7759 /* GuardApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GuardApp.debug.xcconfig; sourceTree = "<group>"; };
+		C922B1F98011DCE618CB5346E2E93582 /* GuardApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GuardApp.release.xcconfig; sourceTree = "<group>"; };
+		D35AB7EE2CEE3A14B6DB9E319F8C2C19 /* LZAntiHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LZAntiHelp.h; path = GuardApp/Classes/LZAntiHelp.h; sourceTree = "<group>"; };
 		DDAA0D415C6E544A87A41EE36FA16862 /* Pods-GuardApp_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuardApp_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E3B47269D2764490D366BC1E575122B3 /* GuardApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GuardApp-umbrella.h"; sourceTree = "<group>"; };
 		E5B26F5BE770079AC57AF67DE4C70AF3 /* Pods-GuardApp_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuardApp_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E796A60D259B6BDB57069B0866CA8CE8 /* GuardApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GuardApp-Info.plist"; sourceTree = "<group>"; };
 		EF0AEA98A418434CB8841F2F6E446095 /* Pods-GuardApp_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuardApp_Example-dummy.m"; sourceTree = "<group>"; };
+		FB0B40DAF43A4CE5A8A0F33CB6BEC007 /* AntiDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AntiDebug.h; path = GuardApp/Classes/AntiDebug.h; sourceTree = "<group>"; };
+		FBF37B0FFC50C9A6A8506D2B2041F514 /* AntiNetWork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AntiNetWork.h; path = GuardApp/Classes/AntiNetWork.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6925184AE1955BF9C809F4CFCDA2515C /* Frameworks */ = {
+		0A52D9ACA61F52B8E39F3BF74083F857 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A554BB85345C99F950BB4FD1E62A0C0 /* Foundation.framework in Frameworks */,
+				42CD231B346189F75FCC1E3504C86686 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,43 +83,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		52C7128C9FB518C71F85D6C91218F500 /* GuardApp */ = {
-			isa = PBXGroup;
-			children = (
-				D9F02C7E4362FB3BB4DF7CC1F7866872 /* AntiDebug.h */,
-				90ACF696E92D95F5D5FFB423DF96E786 /* AntiNetWork.h */,
-				12C9C611284AF16CAA1013883E8FA994 /* AntiNetWork.m */,
-				7C803A74536A53D96F43D238F772AD19 /* GuardApp.h */,
-				8E9245E85DF318BEFFFDC9779F001241 /* LZAntiHelp.h */,
-				BCC9D1EC11DFE4570862CC6366712D68 /* LZAntiHelp.m */,
-				A15B8188836FCDFB5F2ADBB78D4FD296 /* Pod */,
-				71C45EBAEFCDE921AE026F1A7635F54B /* Support Files */,
-			);
-			name = GuardApp;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		71C45EBAEFCDE921AE026F1A7635F54B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				841DC11DDC8BDEA2B59F1748CC5A5B38 /* GuardApp.modulemap */,
-				0E4DFDA8EE76E54660251ED6F5D14F3C /* GuardApp-dummy.m */,
-				E796A60D259B6BDB57069B0866CA8CE8 /* GuardApp-Info.plist */,
-				273BB02B5232A1CA9FC7194EAA05C292 /* GuardApp-prefix.pch */,
-				1F61118F698844C305F7915644059376 /* GuardApp-umbrella.h */,
-				0270185B5A343B658083E8E0791FEA97 /* GuardApp.debug.xcconfig */,
-				8410B89070D67709C61A61F7DAA8F996 /* GuardApp.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/GuardApp";
 			sourceTree = "<group>";
 		};
 		79CB0D74FBA5647FC4F6E4FA77049248 /* Products */ = {
@@ -131,14 +100,35 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A15B8188836FCDFB5F2ADBB78D4FD296 /* Pod */ = {
+		ACF853621976AC211E9DF1B152205D46 /* GuardApp */ = {
 			isa = PBXGroup;
 			children = (
-				A7B8AD8E71A52229ECA3C091DB45D24D /* GuardApp.podspec */,
-				4680E7B5A069C50156A45F68BF6ED9B9 /* LICENSE */,
-				BDC533F1687429FACB0DDB8B308B7619 /* README.md */,
+				FB0B40DAF43A4CE5A8A0F33CB6BEC007 /* AntiDebug.h */,
+				9F11BFB48DD6656D9680E4E935EB7617 /* AntiInjection.h */,
+				FBF37B0FFC50C9A6A8506D2B2041F514 /* AntiNetWork.h */,
+				121A72E6000A7DE12C73C0A5775E7B06 /* GuardApp.h */,
+				D35AB7EE2CEE3A14B6DB9E319F8C2C19 /* LZAntiHelp.h */,
+				3E67BFA1DE4C831967ECAF723ED45EEF /* LZAntiHelp.m */,
+				E12231D879F9902C0EEE6FDED24011BD /* Pod */,
+				B6B7728E25361836247A3D1543DE488C /* Support Files */,
 			);
-			name = Pod;
+			name = GuardApp;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B6B7728E25361836247A3D1543DE488C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C59C4A1217FCC4499BB8125E7DBB1034 /* GuardApp.modulemap */,
+				747B7753A5BBFA20132FF09E18DCA250 /* GuardApp-dummy.m */,
+				957AC0AA1B794B93E762538D62ED2532 /* GuardApp-Info.plist */,
+				B692535418C8A941897279E75634D750 /* GuardApp-prefix.pch */,
+				E3B47269D2764490D366BC1E575122B3 /* GuardApp-umbrella.h */,
+				C6101EA98001F105EEDC4F7C4E8D7759 /* GuardApp.debug.xcconfig */,
+				C922B1F98011DCE618CB5346E2E93582 /* GuardApp.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GuardApp";
 			sourceTree = "<group>";
 		};
 		CB3145932CEF913B90BE2AFA4F492414 /* Pods-GuardApp_Example */ = {
@@ -161,7 +151,7 @@
 		CBE5C6F1EDFD3640F8D882C2060A9409 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				52C7128C9FB518C71F85D6C91218F500 /* GuardApp */,
+				ACF853621976AC211E9DF1B152205D46 /* GuardApp */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -193,26 +183,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E12231D879F9902C0EEE6FDED24011BD /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2EC66F3A536D18879261DE6B95D0E68B /* GuardApp.podspec */,
+				6EB13430BD8ADB462349064F5191EFC8 /* LICENSE */,
+				72C650AEEC5223AEF1DEAA46FE35F1EB /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		88BE86326ADDF4440F07367AA706E07F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0208E153C78CC70E18F90A69AFCA1993 /* AntiDebug.h in Headers */,
+				AF6FFFFABCB639F8025828F283B4A635 /* AntiInjection.h in Headers */,
+				B68DF31377779FB25E777EEBC48CCD9D /* AntiNetWork.h in Headers */,
+				636931A2BCA4228810786C85E740D184 /* GuardApp-umbrella.h in Headers */,
+				60C4CB253BEFA0329DCBE5C0882879C9 /* GuardApp.h in Headers */,
+				6685A7C4E3FF4F1D7634F04F14591AE5 /* LZAntiHelp.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9A5044F1E063D3B8C2FB0CEC8BCCB91A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AA67869D9C7A6046A0A8F90734CEBD52 /* Pods-GuardApp_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D99C9747F3BD9C4E1360E5DC85B19567 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				936139CA6E487C72C010F97E1D7DF2C2 /* AntiDebug.h in Headers */,
-				B045AA8F824C675056A31D73A00548CA /* AntiNetWork.h in Headers */,
-				2BDDA16D168715245CD64A237FC35BB2 /* GuardApp-umbrella.h in Headers */,
-				5DF3C2A2C4984050536244C83FB2B136 /* GuardApp.h in Headers */,
-				EF1BD9EF3D406F6177D9130F1ED649EB /* LZAntiHelp.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,12 +241,12 @@
 		};
 		E8103E1B96D1CC12737D61138D3A57BF /* GuardApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ABD516CD3B2AE28AA183C10755D4AA26 /* Build configuration list for PBXNativeTarget "GuardApp" */;
+			buildConfigurationList = 231DDC1EBAB111B4C21156324D140E55 /* Build configuration list for PBXNativeTarget "GuardApp" */;
 			buildPhases = (
-				D99C9747F3BD9C4E1360E5DC85B19567 /* Headers */,
-				D4483CF137A4DCA98FB0745436B66488 /* Sources */,
-				6925184AE1955BF9C809F4CFCDA2515C /* Frameworks */,
-				946F4E33E12A4CFE1FBE11CCDB14EA3B /* Resources */,
+				88BE86326ADDF4440F07367AA706E07F /* Headers */,
+				D462F7C50BDCBEE052B93E39D071D117 /* Sources */,
+				0A52D9ACA61F52B8E39F3BF74083F857 /* Frameworks */,
+				D8406EAA5F1FC7F0D4D60E3B93488FDD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -285,14 +286,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		946F4E33E12A4CFE1FBE11CCDB14EA3B /* Resources */ = {
+		C1A5AD32240F2191DF4080D96E88FBBC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1A5AD32240F2191DF4080D96E88FBBC /* Resources */ = {
+		D8406EAA5F1FC7F0D4D60E3B93488FDD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,13 +311,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4483CF137A4DCA98FB0745436B66488 /* Sources */ = {
+		D462F7C50BDCBEE052B93E39D071D117 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B38C121360DDD7EF74124599C0D59107 /* AntiNetWork.m in Sources */,
-				013A960AA7A3D9D19882E329CC8007F7 /* GuardApp-dummy.m in Sources */,
-				E981023DA4CA2053BBD2813DCAA279E8 /* LZAntiHelp.m in Sources */,
+				A77D8CBBA7808E37BFB31D561F82504F /* GuardApp-dummy.m in Sources */,
+				7980AC3CF0D0DDA4D7F3D39580D32EDC /* LZAntiHelp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,37 +398,6 @@
 			};
 			name = Debug;
 		};
-		30012DA8A99C3ED6DB96EB12866C833A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8410B89070D67709C61A61F7DAA8F996 /* GuardApp.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GuardApp/GuardApp-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GuardApp/GuardApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GuardApp/GuardApp.modulemap";
-				PRODUCT_MODULE_NAME = GuardApp;
-				PRODUCT_NAME = GuardApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		3E85330002E5A6F930D561ED114F8858 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C4BB9EF4D8759EA6B7BC5228E989FC2 /* Pods-GuardApp_Example.debug.xcconfig */;
@@ -460,6 +429,67 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		725BB4000280B8829F7B6BA19E141F92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6101EA98001F105EEDC4F7C4E8D7759 /* GuardApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GuardApp/GuardApp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GuardApp/GuardApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GuardApp/GuardApp.modulemap";
+				PRODUCT_MODULE_NAME = GuardApp;
+				PRODUCT_NAME = GuardApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		94602DFE617AE3EE31C175424F6D1AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C922B1F98011DCE618CB5346E2E93582 /* GuardApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GuardApp/GuardApp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GuardApp/GuardApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GuardApp/GuardApp.modulemap";
+				PRODUCT_MODULE_NAME = GuardApp;
+				PRODUCT_NAME = GuardApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -523,36 +553,6 @@
 			};
 			name = Release;
 		};
-		CC14FF22B3F24A48454432F4A0B16AEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0270185B5A343B658083E8E0791FEA97 /* GuardApp.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GuardApp/GuardApp-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GuardApp/GuardApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GuardApp/GuardApp.modulemap";
-				PRODUCT_MODULE_NAME = GuardApp;
-				PRODUCT_NAME = GuardApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		D2381F2C9FD1D1EADA278C81A210FD10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B6A1338FF206CBE797820A8F6E29752D /* Pods-GuardApp_Example.release.xcconfig */;
@@ -589,6 +589,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		231DDC1EBAB111B4C21156324D140E55 /* Build configuration list for PBXNativeTarget "GuardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				725BB4000280B8829F7B6BA19E141F92 /* Debug */,
+				94602DFE617AE3EE31C175424F6D1AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -603,15 +612,6 @@
 			buildConfigurations = (
 				3E85330002E5A6F930D561ED114F8858 /* Debug */,
 				D2381F2C9FD1D1EADA278C81A210FD10 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ABD516CD3B2AE28AA183C10755D4AA26 /* Build configuration list for PBXNativeTarget "GuardApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC14FF22B3F24A48454432F4A0B16AEC /* Debug */,
-				30012DA8A99C3ED6DB96EB12866C833A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

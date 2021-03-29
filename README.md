@@ -12,14 +12,9 @@ pod 'GuardApp', :git => "https://github.com/LZRight123/GuardApp.git"
 ## 反调试
 
 ```oc
-lz_ptrace()
-lz_dlhandle()
-lz_anti_debug_for_sysctl()
-lz_asm_pt()
-
-let isDebug = lz_isDebuggingWithSysctl()
-lz_asm_exit()
+lz_anti_debug_start()
 ```
+内部调用了`lz_ptrace`，`lz_dlhandle`，`lz_anti_debug_for_sysctl`，`lz_asm_pt`，`lz_anti_debug_isatty`，`lz_asm_exit`
 
 ## 反代理
 

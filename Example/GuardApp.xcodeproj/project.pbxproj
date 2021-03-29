@@ -19,7 +19,23 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		DFCEA43A2610A83900557ED3 /* AntiForSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCEA4392610A83900557ED3 /* AntiForSwift.swift */; };
+		DFF2BB602611607200DDC4F6 /* libcycript.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF2BB5F2611607200DDC4F6 /* libcycript.dylib */; };
+		DFF2BB622611607D00DDC4F6 /* libcycript.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = DFF2BB5F2611607200DDC4F6 /* libcycript.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFF2BB632611607D00DDC4F6 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DFF2BB622611607D00DDC4F6 /* libcycript.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0DB1C040BA634A650C506F3F /* Pods-GuardApp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardApp_Example.debug.xcconfig"; path = "Target Support Files/Pods-GuardApp_Example/Pods-GuardApp_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -53,6 +69,7 @@
 		DB17C2A409CDB33A44167CE4 /* Pods_GuardApp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuardApp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCEA4382610A83900557ED3 /* GuardApp_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GuardApp_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		DFCEA4392610A83900557ED3 /* AntiForSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntiForSwift.swift; sourceTree = "<group>"; };
+		DFF2BB5F2611607200DDC4F6 /* libcycript.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcycript.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				DFF2BB602611607200DDC4F6 /* libcycript.dylib in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				0EEFC80043A73EA761882D06 /* Pods_GuardApp_Example.framework in Frameworks */,
@@ -104,6 +122,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFF2BB5F2611607200DDC4F6 /* libcycript.dylib */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -184,6 +203,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				B1554AC6868E8519B029B7F5 /* [CP] Embed Pods Frameworks */,
+				DFF2BB632611607D00DDC4F6 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -408,10 +428,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SM6579H77G;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GuardApp/GuardApp-Prefix.pch";
 				INFOPLIST_FILE = "GuardApp/GuardApp-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,10 +454,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SM6579H77G;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GuardApp/GuardApp-Prefix.pch";
 				INFOPLIST_FILE = "GuardApp/GuardApp-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

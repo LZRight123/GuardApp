@@ -10,6 +10,7 @@ import Foundation
 
 class SwAnitDebug: NSObject {
     @objc static func start() {
+//        lz_anti_injected_start()
 //        lz_syscall();
 //        lz_anti_net_start();
 

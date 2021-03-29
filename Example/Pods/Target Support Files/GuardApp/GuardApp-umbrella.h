@@ -11,6 +11,7 @@
 #endif
 
 #import "AntiDebug.h"
+#import "AntiInjection.h"
 #import "AntiNetWork.h"
 #import "GuardApp.h"
 #import "LZAntiHelp.h"

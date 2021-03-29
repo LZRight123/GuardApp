@@ -18,14 +18,6 @@
 #define IP_ADDR_IPv4    @"ipv4"
 #define IP_ADDR_IPv6    @"ipv6"
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface AntiNetWork : NSObject
-
-@end
-
-NS_ASSUME_NONNULL_END
-
 
 /// 获取ip
 static __attribute__((always_inline)) NSDictionary * lz_anti_net_getip() {
@@ -168,17 +160,25 @@ static __attribute__((always_inline)) void lz_anti_net2() {
 
 
 static __attribute__((always_inline)) void lz_anti_net_start() {
-    if (LZAntiHelp.share.antiNetworkTimer == nil) {
-        LZAntiHelp.share.antiNetworkTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(0, 0));
+    @try {
+        if (LZAntiHelp.share.antiNetworkTimer == nil) {
+            LZAntiHelp.share.antiNetworkTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(0, 0));
+        }
+        
+        dispatch_source_t timer = LZAntiHelp.share.antiNetworkTimer;
+        dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 20.0 * NSEC_PER_SEC, 0.0 * NSEC_PER_SEC);
+        dispatch_source_set_event_handler(timer, ^{
+            lz_anti_net1();
+            lz_anti_net2();
+        });
+        dispatch_resume(timer);
+        
+    } @catch (NSException *exception) {
+        
+    } @finally {
+        
     }
     
-    dispatch_source_t timer = LZAntiHelp.share.antiNetworkTimer;
-    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 20.0 * NSEC_PER_SEC, 0.0 * NSEC_PER_SEC);
-    dispatch_source_set_event_handler(timer, ^{
-        lz_anti_net1();
-        lz_anti_net2();
-    });
-    dispatch_resume(timer);
 }
 
 
