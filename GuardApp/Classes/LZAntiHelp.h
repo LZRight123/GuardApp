@@ -8,11 +8,13 @@
 #import <Foundation/Foundation.h>
 #define antiDebugTimer xcodebl
 #define antiNetworkTimer xcodebuild_cc
+#define antiInjectionTimer xcodebuild_inj
 
 
 @interface LZAntiHelp : NSObject
 @property (nonatomic) dispatch_source_t antiDebugTimer;
 @property (nonatomic) dispatch_source_t antiNetworkTimer;
+@property (nonatomic) dispatch_source_t antiInjectionTimer;
 
 + (instancetype)share;
 @end

@@ -23,6 +23,11 @@ lz_anti_debug_start()
 lz_anti_net_start();
 ```
 
+## 反注入
+```oc
+lz_anti_injected_start();
+```
+
 ## Author
 
 350442340@qq.com, 350442340@qq.com

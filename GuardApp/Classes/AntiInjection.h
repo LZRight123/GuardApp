@@ -45,8 +45,27 @@ static __attribute__((always_inline)) void lz_anti_injected3() {
 }
 
 static __attribute__((always_inline)) void lz_anti_injected_start() {
-    lz_anti_injected1();
-    lz_anti_injected2();
-    lz_anti_injected3();
+    
+    @try {
+        if (LZAntiHelp.share.antiInjectionTimer == nil) {
+            LZAntiHelp.share.antiInjectionTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(0, 0));
+        }
+        
+        dispatch_source_t timer = LZAntiHelp.share.antiInjectionTimer;
+        dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC, 0.0 * NSEC_PER_SEC);
+        dispatch_source_set_event_handler(timer, ^{
+            lz_anti_injected1();
+            lz_anti_injected2();
+            lz_anti_injected3();
+        });
+        
+        dispatch_resume(timer);
+        
+    } @catch (NSException *exception) {
+        
+    } @finally {
+        
+    }
+    
 }
 
