@@ -10,7 +10,6 @@
 		0EEFC80043A73EA761882D06 /* Pods_GuardApp_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB17C2A409CDB33A44167CE4 /* Pods_GuardApp_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
-		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* LZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LZAppDelegate.m */; };
@@ -18,8 +17,36 @@
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		DF7C1AE62615899B0005EF1A /* Dobby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7C1AD42615880E0005EF1A /* Dobby.framework */; };
+		DF7C1AE72615899B0005EF1A /* Dobby.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF7C1AD42615880E0005EF1A /* Dobby.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF7C1AF626159EBD0005EF1A /* AeonLucid.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7C1AF526159EBD0005EF1A /* AeonLucid.m */; };
+		DF7C1AF726159F0E0005EF1A /* MemHooks.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7C1AF226159E860005EF1A /* MemHooks.m */; };
+		DFB61CE92611DBDE00EF2211 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		DFCEA43A2610A83900557ED3 /* AntiForSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCEA4392610A83900557ED3 /* AntiForSwift.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DF7C1ADF2615892F0005EF1A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7C1AE82615899B0005EF1A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DF7C1AE72615899B0005EF1A /* Dobby.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0DB1C040BA634A650C506F3F /* Pods-GuardApp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardApp_Example.debug.xcconfig"; path = "Target Support Files/Pods-GuardApp_Example/Pods-GuardApp_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -51,6 +78,11 @@
 		AFBF096B4111C0580BD53BAB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B0DDB00790791B16AC36A688 /* Pods_GuardApp_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuardApp_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB17C2A409CDB33A44167CE4 /* Pods_GuardApp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuardApp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF7C1AD42615880E0005EF1A /* Dobby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Dobby.framework; sourceTree = "<group>"; };
+		DF7C1AF126159E860005EF1A /* MemHooks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemHooks.h; sourceTree = "<group>"; };
+		DF7C1AF226159E860005EF1A /* MemHooks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemHooks.m; sourceTree = "<group>"; };
+		DF7C1AF426159EBD0005EF1A /* AeonLucid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AeonLucid.h; sourceTree = "<group>"; };
+		DF7C1AF526159EBD0005EF1A /* AeonLucid.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AeonLucid.m; sourceTree = "<group>"; };
 		DFCEA4382610A83900557ED3 /* GuardApp_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GuardApp_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		DFCEA4392610A83900557ED3 /* AntiForSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntiForSwift.swift; sourceTree = "<group>"; };
 		DFF2BB5F2611607200DDC4F6 /* libcycript.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcycript.dylib; sourceTree = "<group>"; };
@@ -62,9 +94,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
-				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				DFB61CE92611DBDE00EF2211 /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				0EEFC80043A73EA761882D06 /* Pods_GuardApp_Example.framework in Frameworks */,
+				DF7C1AE62615899B0005EF1A /* Dobby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +138,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF7C1AD42615880E0005EF1A /* Dobby.framework */,
 				DFF2BB5F2611607200DDC4F6 /* libcycript.dylib */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
@@ -119,6 +153,7 @@
 		6003F593195388D20070C39A /* Example for GuardApp */ = {
 			isa = PBXGroup;
 			children = (
+				DF7C1AF026159E740005EF1A /* fjhooker */,
 				6003F59C195388D20070C39A /* LZAppDelegate.h */,
 				6003F59D195388D20070C39A /* LZAppDelegate.m */,
 				DFCEA4392610A83900557ED3 /* AntiForSwift.swift */,
@@ -174,6 +209,17 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		DF7C1AF026159E740005EF1A /* fjhooker */ = {
+			isa = PBXGroup;
+			children = (
+				DF7C1AF126159E860005EF1A /* MemHooks.h */,
+				DF7C1AF226159E860005EF1A /* MemHooks.m */,
+				DF7C1AF426159EBD0005EF1A /* AeonLucid.h */,
+				DF7C1AF526159EBD0005EF1A /* AeonLucid.m */,
+			);
+			name = fjhooker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,6 +232,8 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				B1554AC6868E8519B029B7F5 /* [CP] Embed Pods Frameworks */,
+				DF7C1ADF2615892F0005EF1A /* CopyFiles */,
+				DF7C1AE82615899B0005EF1A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -294,7 +342,9 @@
 			files = (
 				6003F59E195388D20070C39A /* LZAppDelegate.m in Sources */,
 				DFCEA43A2610A83900557ED3 /* AntiForSwift.swift in Sources */,
+				DF7C1AF626159EBD0005EF1A /* AeonLucid.m in Sources */,
 				6003F5A7195388D20070C39A /* LZViewController.m in Sources */,
+				DF7C1AF726159F0E0005EF1A /* MemHooks.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +491,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SM6579H77G;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "GuardApp/GuardApp-Info.plist";
@@ -451,6 +505,11 @@
 				);
 				MODULE_NAME = ExampleApp;
 				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-mllvm",
+					"-enable-subob",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -473,6 +532,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SM6579H77G;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "GuardApp/GuardApp-Info.plist";
@@ -483,6 +546,11 @@
 				);
 				MODULE_NAME = ExampleApp;
 				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-mllvm",
+					"-enable-subob",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",

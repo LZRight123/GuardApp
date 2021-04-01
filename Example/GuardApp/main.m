@@ -7,6 +7,7 @@
 //
 
 @import UIKit;
+#include <stdio.h>
 #import "LZAppDelegate.h"
 
 int main(int argc, char * argv[])
