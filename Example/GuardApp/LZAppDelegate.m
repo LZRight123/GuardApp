@@ -39,7 +39,9 @@ int my_ptrace(int _request, pid_t _pid, caddr_t _addr, int _data){
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-
+    lz_anti_debug_start();
+    lz_anti_net_start();
+    lz_anti_injected_start();
     loadSVC80AccessMemHooks();
             loadSVC80OpenMemHooks();
 //                    loadSVC80FWMemHooks();
